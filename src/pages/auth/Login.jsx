@@ -4,11 +4,11 @@ import axios from "axios";
 import { toast } from "sonner";
 import { useDispatch } from "react-redux";
 import { setUser } from "@/redux/authSlice";
-import { 
-  FaEye, FaEyeSlash, FaEnvelope, FaLock, 
-  FaArrowRight, FaSpinner, FaPray, FaUser,
-  FaShieldAlt, FaLeaf, FaPeace, FaHeart,
-  FaKey, FaUserCheck, FaHome
+import {
+    FaEye, FaEyeSlash, FaEnvelope, FaLock,
+    FaArrowRight, FaSpinner, FaPray, FaUser,
+    FaShieldAlt, FaLeaf, FaPeace, FaHeart,
+    FaKey, FaUserCheck, FaHome
 } from "react-icons/fa";
 
 const Login = () => {
@@ -38,13 +38,13 @@ const Login = () => {
 
     const validateForm = () => {
         const errors = {};
-        
+
         if (!formData.email.trim()) {
             errors.email = "Email is required";
         } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
             errors.email = "Please enter a valid email";
         }
-        
+
         if (!formData.password) {
             errors.password = "Password is required";
         }
@@ -55,7 +55,7 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         if (!validateForm()) {
             toast.error("Please fill in all required fields");
             return;
@@ -67,7 +67,10 @@ const Login = () => {
             const res = await axios.post(
                 `https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/login`,
                 formData,
-                { headers: { "Content-Type": "application/json" } }
+                {
+                    headers: { "Content-Type": "application/json" },
+                    withCredentials: true
+                }
             );
 
             if (res.data.success) {
@@ -82,7 +85,7 @@ const Login = () => {
                 if (res.data.accessToken) {
                     localStorage.setItem("accessToken", res.data.accessToken);
                 }
-                
+
                 toast.success(res.data.message);
                 navigate("/");
             }
@@ -101,7 +104,7 @@ const Login = () => {
                 <div className="absolute top-1/4 left-1/4 text-8xl">🙏</div>
                 <div className="absolute top-1/3 right-1/3 text-7xl">🪷</div>
                 <div className="absolute bottom-1/4 right-1/4 text-8xl">🙏</div>
-                
+
                 <div className="absolute bottom-1/3 left-1/3 text-9xl">☮️</div>
             </div>
 
@@ -145,11 +148,10 @@ const Login = () => {
                                                 name="email"
                                                 value={formData.email}
                                                 onChange={handleChange}
-                                                className={`w-full p-4 pl-12 bg-white/50 dark:bg-gray-700/50 border-2 rounded-xl focus:ring-2 focus:ring-amber-200 dark:focus:ring-amber-800 transition-all duration-300 ${
-                                                    formErrors.email 
-                                                        ? "border-red-500 dark:border-red-500" 
+                                                className={`w-full p-4 pl-12 bg-white/50 dark:bg-gray-700/50 border-2 rounded-xl focus:ring-2 focus:ring-amber-200 dark:focus:ring-amber-800 transition-all duration-300 ${formErrors.email
+                                                        ? "border-red-500 dark:border-red-500"
                                                         : "border-amber-200 dark:border-amber-800 focus:border-amber-500 dark:focus:border-amber-500"
-                                                }`}
+                                                    }`}
                                                 placeholder="your@gmail.email"
                                                 disabled={isLoading}
                                             />
@@ -181,11 +183,10 @@ const Login = () => {
                                                 name="password"
                                                 value={formData.password}
                                                 onChange={handleChange}
-                                                className={`w-full p-4 pl-12 pr-12 bg-white/50 dark:bg-gray-700/50 border-2 rounded-xl focus:ring-2 focus:ring-amber-200 dark:focus:ring-amber-800 transition-all duration-300 ${
-                                                    formErrors.password 
-                                                        ? "border-red-500 dark:border-red-500" 
+                                                className={`w-full p-4 pl-12 pr-12 bg-white/50 dark:bg-gray-700/50 border-2 rounded-xl focus:ring-2 focus:ring-amber-200 dark:focus:ring-amber-800 transition-all duration-300 ${formErrors.password
+                                                        ? "border-red-500 dark:border-red-500"
                                                         : "border-amber-200 dark:border-amber-800 focus:border-amber-500 dark:focus:border-amber-500"
-                                                }`}
+                                                    }`}
                                                 placeholder="Enter your Spiritual password"
                                                 disabled={isLoading}
                                             />
@@ -250,7 +251,7 @@ const Login = () => {
                         </div>
                     </div>
 
-                    
+
                 </div>
 
                 {/* Footer Links */}

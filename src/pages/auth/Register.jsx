@@ -78,7 +78,10 @@ const Register = () => {
             const res = await axios.post(
                 `https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/register`,
                 formData,
-                { headers: { "Content-Type": "application/json" } }
+                {
+                    headers: { "Content-Type": "application/json" },
+                    withCredentials: true
+                }
             );
 
             if (res.data.success) {
@@ -96,7 +99,7 @@ const Register = () => {
         { value: "Pratham Nam", label: "Pratham Nam 🙏" },
         { value: "Satnam", label: "Satnam 🌟" },
         { value: "Sarname", label: "Sarname ✨" },
-        
+
     ];
 
     return (
@@ -121,7 +124,7 @@ const Register = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                    
+
                     {/* Right Side - Form */}
                     <div className="lg:col-span-2">
                         <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-amber-100 dark:border-gray-700 overflow-hidden h-full">
@@ -324,7 +327,7 @@ const Register = () => {
                                         </div>
                                     </div>
 
-                                 
+
                                     {/* Submit Button */}
                                     <button
                                         type="submit"
