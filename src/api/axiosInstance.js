@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8020/api/v1/place",
+  baseURL: "https://spiritual-journey-tracker-backend.vercel.app/api/v1/place",
 });
 
 // Send token automatically

@@ -64,7 +64,7 @@ const Navbar = () => {
     try {
       if (accessToken) {
         await axios.post(
-          "http://localhost:8020/api/v1/user/logout",
+          "https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/logout",
           {},
           {
             headers: { Authorization: `Bearer ${accessToken}` },

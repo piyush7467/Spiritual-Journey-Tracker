@@ -80,7 +80,7 @@ const Profile = () => {
       }
 
       const res = await axios.put(
-        "http://localhost:8020/api/v1/user/profile/update",
+        "https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/profile/update",
         formData,
         {
           headers: {

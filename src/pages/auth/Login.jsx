@@ -65,7 +65,7 @@ const Login = () => {
             setIsLoading(true);
 
             const res = await axios.post(
-                `http://localhost:8020/api/v1/user/login`,
+                `https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/login`,
                 formData,
                 { headers: { "Content-Type": "application/json" } }
             );

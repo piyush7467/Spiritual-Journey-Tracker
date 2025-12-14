@@ -155,7 +155,7 @@ const AddPlace = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:8020/api/v1/place/create",
+        "https://spiritual-journey-tracker-backend.vercel.app/api/v1/place/create",
         payload,
         {
           headers: { Authorization: `Bearer ${token}` },

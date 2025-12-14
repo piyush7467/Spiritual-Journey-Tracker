@@ -37,7 +37,7 @@ export default function ContactPage() {
     setSuccess("");
 
     try {
-      await axios.post("http://localhost:8020/api/v1/user/contact", formData);
+      await axios.post("https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/contact", formData);
       setSuccess("✨ Your message has been sent with divine blessings! We'll respond soon.");
       setFormData({ name: "", email: "", message: "" });
       

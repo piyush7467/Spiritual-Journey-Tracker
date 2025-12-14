@@ -81,7 +81,7 @@ const ChangePassword = () => {
 
     try {
       setIsLoading(true);
-      const res = await axios.post(`http://localhost:8020/api/v1/user/change-password/${email}`, {
+      const res = await axios.post(`https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/change-password/${email}`, {
         newPassword,
         confirmPassword
       });

@@ -76,7 +76,7 @@ const Register = () => {
         try {
             setIsLoading(true);
             const res = await axios.post(
-                `http://localhost:8020/api/v1/user/register`,
+                `https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/register`,
                 formData,
                 { headers: { "Content-Type": "application/json" } }
             );

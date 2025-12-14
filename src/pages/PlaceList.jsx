@@ -34,7 +34,7 @@ const PlaceList = () => {
     const token = user?.accessToken || localStorage.getItem("accessToken");
     const fetchPlaces = async () => {
       try {
-        const res = await axios.get("http://localhost:8020/api/v1/place/", {
+        const res = await axios.get("https://spiritual-journey-tracker-backend.vercel.app/api/v1/place/", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const visits = res.data?.visits ?? [];
@@ -135,7 +135,7 @@ const PlaceList = () => {
     if (window.confirm("🙏 Are you sure you want to delete this Spiritual visit?")) {
       try {
         const token = user?.accessToken || localStorage.getItem("accessToken");
-        await axios.delete(`http://localhost:8020/api/v1/place/delete/${id}`, {
+        await axios.delete(`https://spiritual-journey-tracker-backend.vercel.app/api/v1/place/delete/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setPlaces((prev) => prev.filter((item) => item._id !== id));

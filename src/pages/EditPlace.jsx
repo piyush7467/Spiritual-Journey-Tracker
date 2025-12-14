@@ -40,7 +40,7 @@ const EditPlace = () => {
 
       try {
         const res = await axios.get(
-          `http://localhost:8020/api/v1/place/${id}`,
+          `https://spiritual-journey-tracker-backend.vercel.app/api/v1/place/${id}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
 
@@ -169,7 +169,7 @@ const EditPlace = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `http://localhost:8020/api/v1/place/update/${id}`,
+        `https://spiritual-journey-tracker-backend.vercel.app/api/v1/place/update/${id}`,
         payload,
         { headers: { Authorization: `Bearer ${token}` } }
       );

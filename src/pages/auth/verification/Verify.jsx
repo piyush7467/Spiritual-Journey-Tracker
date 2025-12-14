@@ -17,7 +17,7 @@ const Verify = () => {
     useEffect(() => {
         const VerifyEmail = async () => {
             try {
-                const res = await axios.post(`http://localhost:8020/api/v1/user/verify`, {}, {
+                const res = await axios.post(`https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/verify`, {}, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

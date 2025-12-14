@@ -72,7 +72,7 @@ const VerifyOTP = () => {
 
     try {
       setIsLoading(true)
-      const res = await axios.post(`http://localhost:8020/api/v1/user/verify-otp/${email}`, {
+      const res = await axios.post(`https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/verify-otp/${email}`, {
         otp: finalOtp,
       })
       
@@ -104,7 +104,7 @@ const VerifyOTP = () => {
     
     try {
       setResendLoading(true)
-      await axios.post(`http://localhost:8020/api/v1/user/resend-otp/${email}`)
+      await axios.post(`https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/resend-otp/${email}`)
       toast.success("✨ New OTP sent to your email!")
       setTimer(30)
       clearOtp()

@@ -35,7 +35,7 @@ const ForgotPassword = () => {
             setIsLoading(true);
             setError('');
             
-            const res = await axios.post(`http://localhost:8020/api/v1/user/forgot-password`, { email });
+            const res = await axios.post(`https://spiritual-journey-tracker-backend.vercel.app/api/v1/user/forgot-password`, { email });
             
             if (res.data.success) {
                 toast.success("✨ Spiritual reset link sent to your email!");
