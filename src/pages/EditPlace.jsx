@@ -192,7 +192,7 @@ const EditPlace = () => {
   const mantrasOptions = [
     { value: "Pratham Nam", label: "Pratham Nam 🙏" },
     { value: "Satnam", label: "Satnam 🌟" },
-    { value: "Sarname", label: "Sarname ✨" },
+    { value: "Saarnam", label: "Saarnam ✨" },
   ];
 
   if (fetching) {
@@ -369,14 +369,14 @@ const EditPlace = () => {
                 <div>
                   <label className=" text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center gap-2">
                     <FaMapMarkerAlt className="text-amber-600 dark:text-amber-400" />
-                    Spiritual Place Name *
+                    Satlok Ashram Name *
                   </label>
                   <div className="relative">
                     <input
                       className="w-full p-4 pl-12 bg-white/50 dark:bg-gray-700/50 border-2 border-amber-200 dark:border-amber-800 rounded-xl focus:border-amber-500 dark:focus:border-amber-500 focus:ring-2 focus:ring-amber-200 dark:focus:ring-amber-800 transition-all duration-300"
                       value={place}
                       onChange={(e) => setPlace(e.target.value)}
-                      placeholder="Enter the name of Spiritual place"
+                      placeholder="Enter the name of SAtlok ashram"
                     />
                     <FaHome className="absolute left-4 top-1/2 transform -translate-y-1/2 text-amber-500 dark:text-amber-400" />
                   </div>

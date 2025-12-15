@@ -125,7 +125,7 @@ const Profile = () => {
     switch (mantra) {
       case "Pratham Nam": return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200";
       case "Satnam": return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200";
-      case "Sarname": return "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200";
+      case "Saarnam": return "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200";
       default: return "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200";
     }
   };
@@ -304,7 +304,7 @@ const Profile = () => {
                         <option value="">Select your mantra</option>
                         <option value="Pratham Nam">Pratham Nam</option>
                         <option value="Satnam">Satnam</option>
-                        <option value="Sarname">Sarname</option>
+                        <option value="Saarnam">Saarnam</option>
                       </select>
                       <p className="text-xs text-gray-500 dark:text-gray-400">
                         Your chosen spiritual mantra for all visits

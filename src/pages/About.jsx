@@ -282,14 +282,12 @@ const AboutPage = () => {
 
         {/* Footer */}
         <div className="text-center pt-8 border-t border-amber-200 dark:border-gray-700">
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-            With divine love and blessings,
-          </p>
+          
           <p className="text-lg font-medium bg-linear-to-r from-amber-600 to-orange-600 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">
             The Spiritual Journey Tracker Team
           </p>
           <p className="text-xs text-gray-500 dark:text-gray-500 mt-4">
-            🙏🙏🙏May peace prevail on Earth🙏🙏🙏
+            🙏🙏🙏Sat Saheb🙏🙏🙏
           </p>
         </div>
       </div>

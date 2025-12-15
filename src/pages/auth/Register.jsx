@@ -98,7 +98,7 @@ const Register = () => {
     const mantrasOptions = [
         { value: "Pratham Nam", label: "Pratham Nam 🙏" },
         { value: "Satnam", label: "Satnam 🌟" },
-        { value: "Sarname", label: "Sarname ✨" },
+        { value: "Saarnam", label: "Saarnam ✨" },
 
     ];
 

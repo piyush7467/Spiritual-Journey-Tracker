@@ -184,7 +184,7 @@ const AddPlace = () => {
   const mantrasOptions = [
     { value: "Pratham Nam", label: "Pratham Nam 🙏" },
     { value: "Satnam", label: "Satnam 🌟" },
-    { value: "Sarname", label: "Sarname ✨" },
+    { value: "Saarnam", label: "Saarnam ✨" },
     
   ];
 
@@ -214,7 +214,7 @@ const AddPlace = () => {
           Record Spiritual Visit
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mt-2">
-          Document your spiritual journey with blessings and mantras
+          Document your spiritual journey with places and mantras
         </p>
       </div>
 
@@ -300,7 +300,7 @@ const AddPlace = () => {
                         }`} />
                     </div>
                     <div className="text-center">
-                      <h4 className="font-bold text-lg text-gray-800 dark:text-white">Family Pilgrimage</h4>
+                      <h4 className="font-bold text-lg text-gray-800 dark:text-white">With Family </h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">Shared spiritual journey</p>
                     </div>
                   </button>
@@ -331,7 +331,7 @@ const AddPlace = () => {
                 <div>
                   <label className=" text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center gap-2">
                     <FaMapMarkerAlt className="text-amber-600 dark:text-amber-400" />
-                    Sacred Place Name *
+                    Satlok Ashram Name *
                   </label>
                   <div className="relative">
                     <input
@@ -341,7 +341,7 @@ const AddPlace = () => {
                         }`}
                       value={place}
                       onChange={(e) => handleFieldChange(setPlace, "place", e.target.value)}
-                      placeholder="Enter the name of sacred place or temple"
+                      placeholder="Enter the name of satlok ashram"
                     />
                     <FaHome className="absolute left-4 top-1/2 transform -translate-y-1/2 text-amber-500 dark:text-amber-400" />
                   </div>
@@ -354,7 +354,7 @@ const AddPlace = () => {
                 <div>
                   <label className=" text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center gap-2">
                     <FaCalendarAlt className="text-amber-600 dark:text-amber-400" />
-                    Date of Spiritual Visit *
+                    Date of Visit *
                   </label>
                   <div className="relative">
                     <input
