@@ -22,37 +22,30 @@ import Profile from "./pages/Profile";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,   // ✅ Router context applies to Navbar + Footer
+    element: <Layout />,
     children: [
       { index: true, element: <Home /> },
+
       { path: "chant", element: <Chant /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <ContactPage /> },
       { path: "place", element: <PlaceForm /> },
       { path: "add-place", element: <AddPlace /> },
       { path: "update-place/:id", element: <EditPlace /> },
-      { path: "/dashboard", element: <Profile /> },
+      { path: "dashboard", element: <Profile /> },
 
-      // Auth routes 
-      { path: "/signup", element: <Register /> },
-      { path: "/login", element: <Login /> },
-      { path: "/verify", element: <VerifyEmail /> },
-      { path: "/verify/:token", element: <Verify /> },
-      { path: "/forgot-password", element: <ForgotPassword /> },
-      { path: "/verify-otp/:email", element: <VerifyOTP /> },
-      { path: "/change-password/:email", element: <ChangePassword /> },
+      // Auth routes (relative paths ✅)
+      { path: "signup", element: <Register /> },
+      { path: "login", element: <Login /> },
+      { path: "verify", element: <VerifyEmail /> },
+      { path: "verify/:token", element: <Verify /> },
+      { path: "forgot-password", element: <ForgotPassword /> },
+      { path: "verify-otp/:email", element: <VerifyOTP /> },
+      { path: "change-password/:email", element: <ChangePassword /> },
     ],
   },
-
-  // Auth routes (no navbar/footer)
-  // { path: "/signup", element: <Register /> },
-  // { path: "/login", element: <Login /> },
-  // { path: "/verify", element: <VerifyEmail /> },
-  // { path: "/verify/:token", element: <Verify /> },
-  // { path: "/forgot-password", element: <ForgotPassword /> },
-  // { path: "/verify-otp/:email", element: <VerifyOTP /> },
-  // { path: "/change-password/:email", element: <ChangePassword /> },
 ]);
+
 
 const App = () => {
   return <RouterProvider router={router} />;

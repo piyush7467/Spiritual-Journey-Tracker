@@ -32,7 +32,7 @@ const HeroPage = () => {
             {t("Spiritual Journey Tracker")}
           </h1>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-            Document your spiritual visits, cherish family pilgrimages, and preserve Spiritual memories with divine blessings
+            Document your spiritual visits, cherish family pilgrimages, and preserve Spiritual memories with security.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const HeroPage = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">Spiritual Place Log</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Record visits to temples, ashrams, pilgrimage sites, and other Spiritual places
+                Record visits to satlok ashrams,and other Spiritual places
               </p>
             </div>
 
@@ -143,11 +143,11 @@ const HeroPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white/80 dark:bg-gray-800/80 rounded-xl p-4">
               <p className="text-gray-700 dark:text-gray-300 italic mb-3">
-                "This app helped me preserve memories of our family pilgrimage to the Himalayas. Divine!"
+               “This app helped me preserve memories of our family visit to Satlok Ashram, Mundka, Delhi.”
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-linear-to-r from-amber-400 to-orange-400 rounded-full"></div>
-                <span className="font-semibold text-gray-800 dark:text-white">Priya S.</span>
+                <span className="font-semibold text-gray-800 dark:text-white">Piyush.</span>
               </div>
             </div>
             <div className="bg-white/80 dark:bg-gray-800/80 rounded-xl p-4">
@@ -156,7 +156,7 @@ const HeroPage = () => {
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></div>
-                <span className="font-semibold text-gray-800 dark:text-white">Raj M.</span>
+                <span className="font-semibold text-gray-800 dark:text-white">Devansh.</span>
               </div>
             </div>
             <div className="bg-white/80 dark:bg-gray-800/80 rounded-xl p-4">
@@ -183,7 +183,7 @@ const HeroPage = () => {
             onClick={() => navigate("/signup")}
             className="bg-linear-to-r from-purple-500 to-pink-500 dark:from-purple-600 dark:to-pink-600 text-white px-10 py-4 rounded-full font-bold text-lg shadow-2xl hover:shadow-3xl hover:scale-110 transition-all duration-300 animate-bounce"
           >
-            Start Your Spiritual Journey Today
+            Add Your Spiritual Journey Today
           </button>
         </div>
 
@@ -191,7 +191,7 @@ const HeroPage = () => {
         <div className="mt-16 pt-8 border-t border-amber-200 dark:border-gray-700">
           <div className="text-4xl mb-4">🪷🙏☮️</div>
           <p className="text-gray-600 dark:text-gray-400 text-sm">
-            May peace, blessings, and divine grace accompany all your spiritual journeys
+            🙏🙏🙏Sat Saheb🙏🙏🙏
           </p>
         </div>
       </div>

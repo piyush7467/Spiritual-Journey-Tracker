@@ -224,7 +224,7 @@ const PlaceList = () => {
   return (
     <div className="min-h-screen bg-linear-to-br from-amber-50 via-orange-50 to-yellow-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 p-4 pb-24 safe-area transition-colors duration-300">
       {/* Fixed Spiritual Header */}
-      <div className="sticky top-0 z-20 bg-linear-to-r from-amber-400/10 via-orange-400/10 to-amber-400/10 dark:from-amber-700/10 dark:via-orange-700/10 dark:to-amber-700/10 backdrop-blur-lg rounded-3xl p-4 mb-6 -mx-2 shadow-lg border border-white/30 dark:border-gray-700/30">
+      <div className="z-20 bg-linear-to-r from-amber-400/10 via-orange-400/10 to-amber-400/10 dark:from-amber-700/10 dark:via-orange-700/10 dark:to-amber-700/10 backdrop-blur-lg rounded-3xl p-4 mb-6 -mx-2 shadow-lg border border-white/30 dark:border-gray-700/30">
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
 
@@ -236,7 +236,7 @@ const PlaceList = () => {
               <h1 className="text-xl font-bold text-gray-800 dark:text-white">Spiritual Visits</h1>
               <p className="text-xs text-gray-600 dark:text-gray-400 flex items-center gap-1">
                 <FaHeart className="text-red-400" size={10} />
-                {filteredPlaces.length} blessed {filteredPlaces.length === 1 ? 'journey' : 'journeys'}
+                {filteredPlaces.length} {filteredPlaces.length === 1 ? 'journey' : 'journeys'}
                 {filteredPlaces.length !== places.length && ` (filtered from ${places.length})`}
               </p>
             </div>

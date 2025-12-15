@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              A divine platform dedicated to preserving spiritual journeys, Spiritual memories, and blessed pilgrimages for seekers worldwide.
+              “A divine platform to preserve your spiritual journeys and memories of Satlok Ashrams visited.”
             </p>
             
             <div className="flex items-center gap-3 pt-4">
@@ -238,7 +238,7 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="flex items-center gap-6">
+          {/* <div className="flex items-center gap-6">
             <Link 
               to="/privacy" 
               className="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
@@ -257,11 +257,11 @@ const Footer = () => {
             >
               Cookie Policy
             </Link>
-          </div>
+          </div> */}
           
           <div className="text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              © {currentYear} Spiritual Journey Tracker. All blessings reserved.
+              © {currentYear} Spiritual Journey Tracker. All right reserved.
             </p>
           </div>
         </div>
@@ -273,7 +273,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-2">
-                <span className="text-lg">🕉️</span>
+                
                 <span className="text-lg">☸️</span>
                 <span className="text-lg">✡️</span>
                 <span className="text-lg">☪️</span>
