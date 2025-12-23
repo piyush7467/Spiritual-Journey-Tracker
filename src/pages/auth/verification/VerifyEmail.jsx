@@ -23,7 +23,7 @@ const VerifyEmail = () => {
 
   const handleCheckEmail = () => {
     // This would typically open the user's email client
-    window.open('mailto:', '_blank');
+    window.open('https://mail.google.com', '_blank');
   };
 
   return (
@@ -31,7 +31,7 @@ const VerifyEmail = () => {
       {/* Background Spiritual Elements */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
         <div className="absolute top-1/4 left-1/4 text-8xl">✉️</div>
-        <div className="absolute bottom-1/4 right-1/4 text-8xl">🕉️</div>
+        <div className="absolute bottom-1/4 right-1/4 text-8xl">✨</div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-9xl">📨</div>
         <div className="absolute top-1/3 right-1/3 text-7xl">🙏</div>
       </div>
@@ -51,7 +51,7 @@ const VerifyEmail = () => {
               Check Your Spiritual Inbox
             </h1>
             <p className="text-gray-600 dark:text-gray-400">
-              Divine verification awaits in your email
+              Verification awaits in your email
             </p>
           </div>
 
@@ -69,7 +69,7 @@ const VerifyEmail = () => {
               </h2>
               
               <p className="text-gray-700 dark:text-gray-300 text-lg mb-6 max-w-md mx-auto">
-                We've sent a Spiritual verification link to your email. Please check your inbox and click the link to continue your spiritual journey.
+                We've sent a verification link to your email. Please check your inbox or spam folder and click the link to continue your spiritual journey.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ const VerifyEmail = () => {
                   </div>
                   <h4 className="font-bold text-gray-800 dark:text-white mb-2">Open Your Email</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Check your inbox for our Spiritual message
+                    Check your inbox or spam folder for our Spiritual message
                   </p>
                 </div>
 
@@ -106,7 +106,7 @@ const VerifyEmail = () => {
                   </div>
                   <h4 className="font-bold text-gray-800 dark:text-white mb-2">Click Verification Link</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Click the blessed link in the email
+                    Click the  link in the email
                   </p>
                 </div>
 
@@ -169,7 +169,7 @@ const VerifyEmail = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 dark:text-white mb-2 flex items-center gap-2">
-                    Divine Guidance
+                     Guidance
                   </h4>
                   <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
                     <li className="flex items-center gap-2">
